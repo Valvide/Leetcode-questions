@@ -1,0 +1,70 @@
+/* styles.css */
+
+/* Style the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: "Calibri", sans-serif;
+  width: 300px; /* Set dropdown width */
+  height: 30px; /* Set dropdown height */
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff; /* White background color */
+  color: #000000;
+  border: 1px solid #bfbfbf; /* Border color */
+  cursor: pointer;
+  box-sizing: border-box; /* Include padding and border in the total width and height */
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 100%; /* Make it as wide as the container */
+  max-height: 150px; /* Add a maximum height with scroll */
+  overflow-y: auto; /* Enable vertical scroll when needed */
+  z-index: 1;
+  border: 1px solid #bfbfbf; /* Border color */
+  box-sizing: border-box; /* Include padding and border in the total width and height */
+}
+
+/* Style the dropdown items */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #bfbfbf;
+}
+
+/* Change the color of the dropdown arrow (caret) */
+.dropdown .dropbtn .arrow {
+  background-color: green;
+  margin-left: 10px;
+  color: white;
+  padding: 5px;
+  flex: 1; /* Change arrow color to green */
+}
+
+.items-choice {
+  flex: 10;
+  padding-left: 10px;
+}
+
+/* Show the dropdown content when the arrow is clicked */
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+/* Show "Select Item" as the default text */
+.dropdown .default-text {
+  display: block;
+}
